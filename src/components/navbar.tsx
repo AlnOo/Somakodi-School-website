@@ -9,7 +9,6 @@ import {
 import {
   RectangleStackIcon,
   UserCircleIcon,
-  CommandLineIcon,
   Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
@@ -26,11 +25,6 @@ const NAV_MENU = [
     name: "Courses",
     icon: UserCircleIcon,
     href: "#ourcourses",
-  },
-  {
-    name: "Financial Aid",
-    icon: CommandLineIcon,
-    href: "https://somakodi.org/scholarships",
   },
 ];
 
@@ -103,11 +97,20 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button variant="text">Our Blog</Button>
-              <Link onClick={(e) => e.preventDefault()} href="#!"
-                target="_blank"
+              <a
+                href="#events"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector("#events");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
-                <Button color="gray">Events</Button>
+                <Button variant="text">Events</Button>
+              </a>
+              <Link href="/scholarships">
+                <Button color="gray">Financial Aid</Button>
               </Link>
             </div>
             <IconButton
@@ -136,9 +139,16 @@ export function Navbar() {
               <div className="mt-6 mb-4 flex items-center gap-4">
                 <Button variant="text">Our Blog</Button>
                 <a
-                  href="https://www.material-tailwind.com/blocks"
-                  target="_blank"
-                >
+                  href="#events"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.querySelector("#events");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                    setOpen(false); // closes mobile menu after clicking
+                  }}
+                  >
                   <Button color="gray">Events</Button>
                 </a>
               </div>

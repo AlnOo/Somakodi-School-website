@@ -20,7 +20,7 @@ import CategoryCard from "@/components/category-card";
 
 const CATEGORIES = [
   {
-    img: "/image/blogs/blog-3.png",
+    img: "/image/blogs/blog9.png",
     icon: HeartIcon,
     title: "Frontend Web Development",
     desc: "3 Courses",

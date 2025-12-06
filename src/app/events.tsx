@@ -9,31 +9,31 @@ const EVENTS = [
     img: "/image/blogs/blog-1.svg",
     title: "Future of Web Development: Trends and Innovations",
     desc: "Discover the latest trends, innovations and technologies shaping the future of Software Development.",
-    buttonLabel: "register for free",
+    buttonLabel: "Mar 26",
   },
   {
     img: "/image/blogs/blog2.svg",
     title: "WebDev Pro Code-a-Thon: Build a Responsive Website",
     desc: "Participants will have 48 hours to create a responsive website from scratch using HTML, CSS, and JavaScript.",
-    buttonLabel: "register for free",
+    buttonLabel: "May 26",
   },
   {
     img: "/image/blogs/blog3.svg",
     title: "Ask the Experts: Frontend Web Development",
     desc: "Join our live Q&A session with our experienced instructors. Get answers to your queries, insights into best practices.",
-    buttonLabel: "get ticket",
+    buttonLabel: "Feb 26",
   },
   {
     img: "/image/blogs/blog4.svg",
-    title: "Web Accessibility: Building Inclusive Websites",
-    desc: "Industry experts will discuss the importance of inclusive design and share strategies for creating websites.",
-    buttonLabel: "get ticket",
+    title: "Graduation",
+    desc: "Join us on March 2026 as we honor the hard work, growth, and perseverance that have shaped our graduates into the next generation of tech innovators.",
+    buttonLabel: "Mar 26",
   },
 ];
 
 export function Events() {
   return (
-    <section className="py-20 px-8">
+    <section id="events" className="py-20 px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">
           Upcoming Events
