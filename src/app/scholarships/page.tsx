@@ -29,7 +29,6 @@ const scholarships = [
 ];
 
 export default function ScholarshipPage() {
-  // Form state
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -37,30 +36,24 @@ export default function ScholarshipPage() {
     description: "",
   });
 
-  // Error state
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState(false);
 
-  // Handle input changes
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  // Form validation
   const validate = () => {
-    let newErrors = {};
-
+    let newErrors: any = {};
     if (!form.name.trim()) newErrors.name = "Name is required";
     if (!form.email.trim()) newErrors.email = "Email is required";
     if (!form.scholarship.trim()) newErrors.scholarship = "Select a scholarship";
     if (!form.description.trim()) newErrors.description = "Description is required";
-
     return newErrors;
   };
 
-  // Handle submit
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const validationErrors = validate();
@@ -70,14 +63,35 @@ export default function ScholarshipPage() {
       return;
     }
 
-    // Success
-    setSuccess(true);
-    setForm({
-      name: "",
-      email: "",
-      scholarship: "",
-      description: "",
-    });
+    // SheetDB endpoint
+    const sheetdbEndpoint = "https://sheetdb.io/api/v1/izg5vtcz0sh91";
+
+    try {
+      const response = await fetch(sheetdbEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: {
+            name: form.name,
+            email: form.email,
+            scholarship: form.scholarship,
+            description: form.description,
+          },
+        }),
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        setForm({ name: "", email: "", scholarship: "", description: "" });
+      } else {
+        alert("Error submitting form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Error submitting form. Please try again.");
+    }
   };
 
   return (
@@ -87,15 +101,9 @@ export default function ScholarshipPage() {
         <Typography variant="h2" className="font-bold mb-4">
           Making Education Accessible for All
         </Typography>
-
         <Typography className="text-lg w-11/12 sm:w-4/5 md:w-4/5 lg:w-4/5 mx-auto mb-6 text-justify">
-          At Somakodi School, our mission is rooted in expanding access to life-changing digital skills for communities that are traditionally underserved. We believe that when education becomes accessible, entire families and communities are lifted. To achieve this, we have developed targeted scholarship programmes that remove financial, social, and structural barriers for learners with high potential.
+          At Somakodi School, our mission is rooted in expanding access to life-changing digital skills for underserved communities...
         </Typography>
-
-        <Typography className="text-lg w-11/12 sm:w-4/5 md:w-4/5 lg:w-4/5 mx-auto mb-6 text-justify">
-          Our Financial Aid, InnovateHer, and PWD Scholarship initiatives are designed to create practical pathways into the technology sector for individuals who might otherwise be excluded due to low income, gender inequality, or disability. By supporting these programmes, partners and donors help us ensure that vulnerable learners including young women, persons with disabilities, and low-income youth gain the skills needed to participate in Kenya’s growing digital economy.Join students from around Kenya who have earned their certificate with the help of the Somakodi Financial Aid Programme.
-        </Typography>
-
         <div className="absolute bottom-0 left-0 w-full h-16 bg-white rounded-t-full"></div>
       </div>
 
@@ -113,21 +121,16 @@ export default function ScholarshipPage() {
               <Typography variant="h5" className="font-semibold mb-2">{sch.title}</Typography>
               <Typography className="text-gray-600 mb-6 text-justify">{sch.desc}</Typography>
               <Button size="lg"
-                onClick={() => {
-                  const formSection = document.getElementById("apply-form");
-                  formSection?.scrollIntoView({ behavior: "smooth" });
-                }}
+                onClick={() => document.getElementById("apply-form")?.scrollIntoView({ behavior: "smooth" })}
                 className="w-full bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-indigo-500 hover:to-purple-500"
               >
                 {sch.button}
               </Button>
-
             </CardBody>
           </Card>
         ))}
       </div>
 
-      {/* Form Section */}
       {/* Form Section */}
       <div id="apply-form" className="max-w-4xl mx-auto mb-16 bg-white p-8 rounded-2xl shadow-lg">
         <Typography variant="h4" className="font-semibold mb-6 text-center">
@@ -141,7 +144,6 @@ export default function ScholarshipPage() {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* First Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
               <input
@@ -183,7 +185,6 @@ export default function ScholarshipPage() {
             </div>
           </div>
 
-          {/* Description */}
           <div>
             <textarea
               name="description"
@@ -196,7 +197,6 @@ export default function ScholarshipPage() {
             {errors.description && <p className="text-red-500 text-sm mt-1">{errors.description}</p>}
           </div>
 
-          {/* Submit Button */}
           <Button
             type="submit"
             size="lg"
@@ -206,7 +206,6 @@ export default function ScholarshipPage() {
           </Button>
         </form>
       </div>
-
       <Footer />
     </div>
   );

@@ -66,19 +66,19 @@ export function CoursesCategories() {
             <Typography variant="small" color="white" className="font-bold opacity-50">
               HTML, CSS & Javascript
             </Typography>
+            <Typography variant="small" color="white" className="font-bold opacity-50">
+              React, Python & Flask
+            </Typography>
             <Typography variant="h4" className="mt-9" color="white">
-              Web Development Intro
+              Web Development
             </Typography>
             <Typography
               variant="paragraph"
               color="white"
               className="mt-4 mb-14 opacity-50"
             >
-              Ready to start your Software Development journey?
+              Ready to start your Software Development journey? Enroll Today
             </Typography>
-            <Button size="sm" color="white">
-              Enroll Now
-            </Button>
           </CardBody>
         </Card>
         <div className="col-span-1 flex flex-col gap-6">

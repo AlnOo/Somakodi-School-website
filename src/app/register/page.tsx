@@ -9,10 +9,50 @@ export default function RegisterPage() {
   const course = params.get("course") || "Somakodi Program";
 
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    location: "",
+    schedule: "",
+  });
 
-  const handleSubmit = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    const sheetdbEndpoint = "https://sheetdb.io/api/v1/ilxqxwe1drya4";
+
+    try {
+      const response = await fetch(sheetdbEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: {
+            course,
+            fullName: formData.fullName,
+            email: formData.email,
+            phone: formData.phone,
+            location: formData.location,
+            schedule: formData.schedule,
+          },
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        alert("Error submitting form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Error submitting form. Please try again.");
+    }
   };
 
   if (submitted) {
@@ -47,7 +87,6 @@ export default function RegisterPage() {
         </p>
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-          {/* COURSE NAME */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">
               Course Applying For
@@ -60,54 +99,67 @@ export default function RegisterPage() {
             />
           </div>
 
-          {/* FULL NAME */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">Full Name</label>
             <input
               type="text"
+              name="fullName"
               required
               placeholder="Enter your full name"
+              value={formData.fullName}
+              onChange={handleChange}
               className="w-full rounded-xl border-gray-300 px-4 py-3"
             />
           </div>
 
-          {/* EMAIL */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">Email Address</label>
             <input
               type="email"
+              name="email"
               required
               placeholder="example@gmail.com"
+              value={formData.email}
+              onChange={handleChange}
               className="w-full rounded-xl border-gray-300 px-4 py-3"
             />
           </div>
 
-          {/* PHONE */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">Phone Number</label>
             <input
               type="text"
+              name="phone"
               required
               placeholder="07XX XXX XXX"
+              value={formData.phone}
+              onChange={handleChange}
               className="w-full rounded-xl border-gray-300 px-4 py-3"
             />
           </div>
 
-          {/* LOCATION */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">Location</label>
             <input
               type="text"
+              name="location"
               required
               placeholder="City or town"
+              value={formData.location}
+              onChange={handleChange}
               className="w-full rounded-xl border-gray-300 px-4 py-3"
             />
           </div>
 
-          {/* SCHEDULE */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">Preferred Schedule</label>
-            <select className="w-full rounded-xl border-gray-300 px-4 py-3" required>
+            <select
+              name="schedule"
+              value={formData.schedule}
+              onChange={handleChange}
+              className="w-full rounded-xl border-gray-300 px-4 py-3"
+              required
+            >
               <option value="">Select schedule</option>
               <option>Weekday Classes</option>
               <option>Evening Classes</option>
@@ -115,7 +167,6 @@ export default function RegisterPage() {
             </select>
           </div>
 
-          {/* BUTTON */}
           <button
             type="submit"
             className="w-full bg-blue-600 text-white py-3 rounded-xl text-lg font-medium hover:bg-blue-700 transition"

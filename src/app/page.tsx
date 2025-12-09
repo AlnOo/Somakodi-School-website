@@ -9,7 +9,6 @@ import ExploreCourses from "./explore-courses";
 import Testimonial from "./testimonial";
 import Events from "./events";
 import StudentsFeedback from "./students-feedback";
-import TrustedCompany from "./trusted-companies";
 
 export default function Campaign() {
   return (
@@ -22,7 +21,6 @@ export default function Campaign() {
       <Testimonial />
       <Events />
       <StudentsFeedback />
-      <TrustedCompany />
       <Footer />
     </>
   );

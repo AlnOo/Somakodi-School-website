@@ -10,7 +10,7 @@ const COURSES = [
     title: "Website Design",
     label: "Kes. 10,500",
     desc: "Unlock the Web Design and Development Foundation. Dive into HTML to structure your content and CSS to style it. By the end, you'll be crafting beautiful web pages from scratch.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Web-design.pdf",
   },
   {
     img: "/image/blogs/blog3.svg",
@@ -18,7 +18,7 @@ const COURSES = [
     title: "Software Engineering",
     label: "Kes. 75,000",
     desc: "Our Software Engineering course equips you with the skills to design and build scalable, high-performance applications that work seamlessly across different platforms and environments.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Software-engineering.pdf",
   },
   {
     img: "/image/blogs/blog2.svg",
@@ -34,7 +34,7 @@ const COURSES = [
     title: "Frontend Essentials Course",
     label: "Kes. 45,000",
     desc: "For aspiring web developers, the Frontend Essentials course is a must. Dive into the core technologies - HTML, CSS, and JavaScript.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Frontend-essentials.pdf",
   },
   {
     img: "/image/blogs/blog6.svg",
@@ -58,7 +58,7 @@ const COURSES = [
     title: "CyberSecurity",
     label: "Kes. 75,000",
     desc: "Take your cybersecurity skills to the next level with our hands-on Cybersecurity course. Learn how to detect threats, secure systems, and protect digital environments.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/cybersecurity.pdf",
   },
   {
     img: "/image/blogs/blog6.svg",
@@ -74,7 +74,7 @@ const COURSES = [
     title: "Data Science",
     label: "Kes. 75,000",
     desc: "Take your data skills to the next level with our Data Science course. Learn how to analyze data, build predictive models, and turn insights into real-world solutions.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Data-Science.pdf",
   },
       {
     img: "/image/blogs/blog5.svg",
@@ -82,7 +82,7 @@ const COURSES = [
     title: "JavaScript Mastery",
     label: "Kes. 50,000",
     desc: "Learn how to build interactive frontend interfaces and powerful backend applications using modern JavaScript. From dynamic UIs to server-side logic, we’ll equip you with the full-stack skills needed to create complete web apps.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Javascript.pdf",
   },
   {
     img: "/image/blogs/blog6.svg",
@@ -90,7 +90,7 @@ const COURSES = [
     title: "Workplace Readiness & Leadership Program",
     label: "Kes. 25,000",
     desc: "Level up your career with essential soft skills! Master communication, teamwork, and problem-solving to stand out, collaborate effectively, and succeed in any professional setting.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Soft-skills.pdf",
   },
   {
     img: "/image/blogs/blog4.svg",

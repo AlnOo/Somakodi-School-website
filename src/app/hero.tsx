@@ -32,7 +32,6 @@ function Hero() {
             <div className="mb-8 flex justify-center gap-4 lg:justify-start">
               <Link href="#ourcourses" scroll={false}>
               <Button color="gray">View All Courses</Button></Link>
-              <Button color="gray" variant="outlined">Enroll now</Button>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-4 items-center justify-between gap-4 lg:justify-start">
               <Image

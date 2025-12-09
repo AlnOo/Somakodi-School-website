@@ -136,22 +136,6 @@ export function Navbar() {
                   </NavItem>
                 ))}
               </ul>
-              <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text">Our Blog</Button>
-                <a
-                  href="#events"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.querySelector("#events");
-                    if (element) {
-                      element.scrollIntoView({ behavior: "smooth" });
-                    }
-                    setOpen(false); // closes mobile menu after clicking
-                  }}
-                  >
-                  <Button color="gray">Events</Button>
-                </a>
-              </div>
             </div>
           </Collapse>
         </MTNavbar>

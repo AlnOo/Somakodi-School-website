@@ -45,7 +45,7 @@ export function OutImpressiveStats() {
           </Typography>
           <Typography
             variant="lead"
-            className="mx-auto mb-24 w-full !text-gray-500 lg:w-10/12"
+            className="mx-auto mb-24 w-full !text-gray-500 lg:w-10/12 text-justify" style={{ textAlign: "justify" }}
           >
             Somakodi School is where future tech leaders are made! We deliver fast-paced, hands-on training in Software Engineering, Data Science, Cybersecurity, and more. Our Courses are designed to get you job-ready, confident, and unstoppable within a short time. With a strong focus on accessibility and community, we open doors for learners from all backgrounds to break into the digital world. At Somakodi, we don’t just teach tech skills, we ignite potential and launch careers.
           </Typography>
