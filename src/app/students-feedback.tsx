@@ -24,7 +24,7 @@ const FEEDBACKS = [
       "The courses are structured well, and the class projects helped me build a strong portfolio to showcase.",
     client: "Arya Alya",
     title: "Cybersecurity Intern.",
-    img: "/image/avatar2.jpg",
+    img: "/image/avatar2.jpeg",
   },
 ];
 

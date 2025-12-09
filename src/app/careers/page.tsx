@@ -19,7 +19,7 @@ export default function CareersPage() {
     {
       title: "Tutor – Software Engineering",
       deadline: "January 20, 2026",
-      pdf: "/job-descriptions/software-engineering-tutor.pdf",
+      pdf: "/job-descriptions/Tutor Job Vacancy.pdf",
       category: "Technical",
       description:
         "We are seeking a passionate Software Engineering Tutor for our online classes. In this role, you will train and mentor learners through hands-on coding sessions and real-world software development projects. Candidates should have experience with web development languages and frameworks, including JavaScript, React, HTML & CSS, Python and Flask. Experience with version control systems and prior teaching or mentoring experience will be an added advantage.",
@@ -27,7 +27,7 @@ export default function CareersPage() {
     {
       title: "Grants & Partnerships Lead",
       deadline: "January 15, 2026",
-      pdf: "/job-descriptions/grants-partnerships-lead.pdf",
+      pdf: "/job-descriptions/Grants Job Vacancy.pdf",
       category: "Non-Technical",
       description:
         "We are seeking a dynamic Grants & Partnerships Lead to spearhead our fundraising and partnership efforts. In this role, you will identify and pursue funding opportunities, build and maintain strategic partnerships, and manage donor relationships that support the growth and sustainability of our programs. You will collaborate closely with internal teams to develop compelling proposals, track partnership performance, and strengthen Somakodi School’s impact.",
@@ -239,7 +239,7 @@ export default function CareersPage() {
                         el?.scrollIntoView({ behavior: "smooth" });
                       }}
                     >
-                      Interested? Apply Below
+                      Apply Below
                     </Button>
                   </div>
                 </CardBody>

@@ -24,8 +24,8 @@ const EVENTS = [
     buttonLabel: "Feb 26",
   },
   {
-    img: "/image/blogs/blog4.svg",
-    title: "Graduation",
+    img: "/image/blogs/avatar6.jpg",
+    title: "Graduation Day",
     desc: "Join us on March 2026 as we honor the hard work, growth, and perseverance that have shaped our graduates into the next generation of tech innovators.",
     buttonLabel: "Mar 26",
   },

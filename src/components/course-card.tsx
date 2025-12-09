@@ -35,15 +35,9 @@ export function CourseCard({ img, tag, title, desc, label, brochure }: CourseCar
           </Typography>
         </div>
 
-        <Link
-  href={`/courses/${encodeURIComponent(title)}`}
-  className="text-blue-gray-900 hover:text-gray-900"
->
-  <Typography variant="h5" className="mb-2 normal-case">
-    {title}
-  </Typography>
-</Link>
-
+        <Typography variant="h5" className="mb-2 normal-case">
+          {title}
+        </Typography>
 
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}

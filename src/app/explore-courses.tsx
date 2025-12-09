@@ -5,7 +5,7 @@ import CourseCard from "@/components/course-card";
 
 const COURSES = [
   {
-    img: "/image/blogs/blog4.svg",
+    img: "/image/blogs/blog4.jpg",
     tag: "Beginner • 5 Weeks • 2 classes • Intake: JAN26",
     title: "Website Design",
     label: "Kes. 10,500",
@@ -21,12 +21,12 @@ const COURSES = [
     brochure: "/brochures/Software-engineering.pdf",
   },
   {
-    img: "/image/blogs/blog2.svg",
+    img: "/image/blogs/blog2.jpg",
     tag: "Medium • 8 Weeks • 2 Classes • Intake: APR26",
     title: "Master the Power of React",
     label: "Kes. 25,000",
     desc: "Take your frontend development to the next level with our React Development course. Learn how to build fast, interactive and dynamic web applications using the power of React.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/React.pdf",
   },
   {
     img: "/image/blogs/blog5.svg",
@@ -37,23 +37,23 @@ const COURSES = [
     brochure: "/brochures/Frontend-essentials.pdf",
   },
   {
-    img: "/image/blogs/blog6.svg",
+    img: "/image/blogs/blog6.png",
     tag: "Medium • 3 Weeks • 2 Classes • Intake: JAN26",
     title: "Streamline Your CSS Workflow",
     label: "Kes. 7,500",
     desc: "Our Tailwind CSS Introduction course teaches you how to use this utility-first CSS framework to streamline your workflow, saving you time.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Tailwind-css.pdf",
   },
   {
-    img: "/image/blogs/blog4.svg",
-    tag: "Beginner • 8 Weeks • 2 Classes • Intake: FEB26",
+    img: "/image/blogs/blog5.jpg",
+    tag: "Beginner • 12 Weeks • 2 Classes • Intake: FEB26",
     title: "Master Backend Development",
     label: "Kes. 45,000",
     desc: "Dream of becoming a backend developer? Our intensive Python and Flask course is your fast track to achieving that goal.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Python-Flask.pdf",
   },
     {
-    img: "/image/blogs/blog5.svg",
+    img: "/image/blogs/blog7.jpg",
     tag: "Medium • 6 Months • 1 Class • Intake: FEB26",
     title: "CyberSecurity",
     label: "Kes. 75,000",
@@ -61,12 +61,12 @@ const COURSES = [
     brochure: "/brochures/cybersecurity.pdf",
   },
   {
-    img: "/image/blogs/blog6.svg",
-    tag: "Medium • 6 Months • 1 Class • Intake: JUN26",
+    img: "/image/blogs/blog8.jpg",
+    tag: "Medium • 8 Months • 1 Class • Intake: JUN26",
     title: "Mobile App. Development",
-    label: "Kes.135,000",
+    label: "Kes.75,000",
     desc: "Take your mobile app development skills to the next level with our Mobile App Development course. Learn how to build fast, interactive, and user-friendly applications for Android and iOS.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Mobile-app.pdf",
   },
   {
     img: "/image/blogs/blog4.svg",
@@ -77,7 +77,7 @@ const COURSES = [
     brochure: "/brochures/Data-Science.pdf",
   },
       {
-    img: "/image/blogs/blog5.svg",
+    img: "/image/blogs/blog9.jpg",
     tag: "Beginner • 3 Months • 1 Class • Intake: MAR26",
     title: "JavaScript Mastery",
     label: "Kes. 50,000",
@@ -85,7 +85,7 @@ const COURSES = [
     brochure: "/brochures/Javascript.pdf",
   },
   {
-    img: "/image/blogs/blog6.svg",
+    img: "/image/blogs/blog10.jpg",
     tag: "Medium • 4 Weeks • 1 Class • Intake: FEB26",
     title: "Workplace Readiness & Leadership Program",
     label: "Kes. 25,000",
@@ -93,12 +93,12 @@ const COURSES = [
     brochure: "/brochures/Soft-skills.pdf",
   },
   {
-    img: "/image/blogs/blog4.svg",
-    tag: "Medium • 6 Months • 1 Class • Intake: MAR26",
+    img: "/image/blogs/blog11.jpg",
+    tag: "Medium • 8 Months • 1 Class • Intake: MAR26",
     title: "Applied AI & Full-Stack Development",
     label: "Kes. 75,000",
     desc: "Unlock the power of AI and become a full-stack developer! Learn how to build intelligent web applications using Python and JavaScript, from dynamic user interfaces to smart backend systems.",
-    brochure: "/brochures/Somakodi Software Engineering Brochure.pdf",
+    brochure: "/brochures/Fullstack-AI.pdf",
   },
 ];
 

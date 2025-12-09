@@ -20,7 +20,7 @@ import CategoryCard from "@/components/category-card";
 
 const CATEGORIES = [
   {
-    img: "/image/blogs/blog9.png",
+    img: "/image/blogs/BScSE.jpg",
     icon: HeartIcon,
     title: "Frontend Web Development",
     desc: "3 Courses",
@@ -32,13 +32,13 @@ const CATEGORIES = [
     desc: "1 Courses",
   },
   {
-    img: "/image/blogs/blog-10.jpeg",
+    img: "/image/blogs/blog12.jpg",
     icon: GlobeEuropeAfricaIcon,
     title: "Web Security & Performance",
     desc: "1 Courses",
   },
   {
-    img: "/image/blogs/blog-13.png",
+    img: "/image/blogs/BScSE3.jpg",
     icon: MicrophoneIcon,
     title: "Full-Stack Web Development",
     desc: "4 Courses",
