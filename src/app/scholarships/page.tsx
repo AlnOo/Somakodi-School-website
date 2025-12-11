@@ -102,7 +102,8 @@ export default function ScholarshipPage() {
           Making Education Accessible for All
         </Typography>
         <Typography className="text-lg w-11/12 sm:w-4/5 md:w-4/5 lg:w-4/5 mx-auto mb-6 text-justify">
-          At Somakodi School, our mission is rooted in expanding access to life-changing digital skills for underserved communities...
+          At Somakodi School, our mission is rooted in expanding access to life-changing digital skills for underserved communities. We believe that talent exists everywhere, but opportunity does not and that’s why our scholarship program is designed to remove financial barriers and open doors for passionate learners.
+          Through this initiative, we aim to empower young people, women, and individuals from marginalized backgrounds with the technical training, mentorship, and career support they need to thrive in today’s digital economy. By investing in their growth, we’re building a future where innovation, opportunity, and technology are accessible to all.
         </Typography>
         <div className="absolute bottom-0 left-0 w-full h-16 bg-white rounded-t-full"></div>
       </div>

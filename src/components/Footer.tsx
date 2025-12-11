@@ -94,7 +94,7 @@ export function Footer() {
               Subscribe
             </Typography>
             <Typography className="!text-gray-500 font-normal mb-4 text-base">
-              Get first access to our exclusive Tech events and be the first to know about new courses and Financial Aid offers.
+              Get priority access to our exclusive Tech events and be the first to know about new courses financial Aid offers.
             </Typography>
 
             <div className="flex mb-3 flex-col lg:flex-row items-start gap-4">
