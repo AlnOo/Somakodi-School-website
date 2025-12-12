@@ -6,7 +6,7 @@ import EventCard from "@/components/event-card";
 
 const EVENTS = [
   {
-    img: "/image/blogs/blog-1.svg",
+    img: "/image/blogs/divgirl.jpg",
     title: "Future of Web Development: Trends and Innovations",
     desc: "Discover the latest trends, innovations and technologies shaping the future of Software Development.",
     buttonLabel: "Mar 26",
@@ -18,7 +18,7 @@ const EVENTS = [
     buttonLabel: "May 26",
   },
   {
-    img: "/image/blogs/blog3.svg",
+    img: "/image/blogs/under.jpg",
     title: "Ask the Experts: Frontend Web Development",
     desc: "Join our live Q&A session with our experienced instructors. Get answers to your queries, insights into best practices.",
     buttonLabel: "Feb 26",

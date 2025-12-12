@@ -47,7 +47,7 @@ const COURSES = [
   {
     img: "/image/blogs/blog5.jpg",
     tag: "Beginner • 12 Weeks • 2 Classes • Intake: FEB26",
-    title: "Master Backend Development",
+    title: "Backend Development",
     label: "Kes. 45,000",
     desc: "Dream of becoming a backend developer? Our intensive Python and Flask course is your fast track to achieving that goal.",
     brochure: "/brochures/Python-Flask.pdf",
