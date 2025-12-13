@@ -17,8 +17,15 @@ interface EventCardProps {
 
 export function EventCard({ img, title, desc, buttonLabel }: EventCardProps) {
   return (
-    <Card color="transparent" shadow={false}>
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+    <Card
+      color="transparent"
+      shadow={false}
+      className="border-4 border-blue-500 rounded-xl p-4"
+    >
+      <CardHeader
+        floated={false}
+        className="mx-0 mt-0 mb-6 h-48 rounded-lg overflow-hidden"
+      >
         <Image
           width={768}
           height={768}
@@ -27,6 +34,7 @@ export function EventCard({ img, title, desc, buttonLabel }: EventCardProps) {
           className="h-full w-full object-cover"
         />
       </CardHeader>
+
       <CardBody className="p-0">
         <a
           href="#"
@@ -36,9 +44,11 @@ export function EventCard({ img, title, desc, buttonLabel }: EventCardProps) {
             {title}
           </Typography>
         </a>
+
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
+
         <Button color="gray" size="sm">
           {buttonLabel}
         </Button>
