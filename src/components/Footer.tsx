@@ -3,39 +3,23 @@
 import { Typography, Button, Input } from "@material-tailwind/react";
 import Link from "next/link";
 import { useState } from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-
-const LINKS = [
-  {
-    title: "Somakodi",
-    items: [
-      { label: "About Us", href: "/#about-us" },
-      { label: "Courses", href: "/#ourcourses" },
-      { label: "Careers", href: "/careers" },
-      { label: "Financial Aid", href: "/scholarships" },
-    ],
-  },
-  {
-    title: "Socials",
-    items: [
-      { label: "Facebook", href: "https://www.facebook.com/Somakodischool", icon: <FaFacebook className="inline-block w-5 h-5 mr-2" /> },
-      { label: "Instagram", href: "https://www.instagram.com/somakodi.ke/", icon: <FaInstagram className="inline-block w-5 h-5 mr-2" /> },
-      { label: "LinkedIn", href: "https://www.linkedin.com/company/105460723/admin/page-posts/published/", icon: <FaLinkedin className="inline-block w-5 h-5 mr-2" /> },
-      { label: "X", href: "https://x.com/somakodi", icon: <FaXTwitter className="inline-block w-5 h-5 mr-2" /> },
-    ],
-  },
-];
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter,
+  FaCode,
+} from "react-icons/fa6";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
   const [email, setEmail] = useState("");
-  const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleSubscribe = async () => {
     if (!email) return alert("Please enter a valid email");
-
     setLoading(true);
 
     try {
@@ -61,71 +45,112 @@ export function Footer() {
   };
 
   return (
-    <footer className="px-8 pt-24 pb-8 bg-gray-50">
-      <div className="container max-w-6xl flex flex-col mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 !w-full ">
-          {/* Left Section */}
-          <div className="flex col-span-2 items-start gap-10 mb-10 lg:mb-0 md:gap-36">
-            {LINKS.map(({ title, items }) => (
-              <ul key={title}>
-                <Typography variant="h6" color="blue-gray" className="mb-4">
-                  {title}
-                </Typography>
+    <footer className="bg-white border-t border-gray-200 px-6 pt-20 pb-10">
+      <div className="max-w-7xl mx-auto">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 flex items-center justify-center">
+                <FaCode className="text-white text-lg" />
+              </div>
+              <Typography variant="h5" className="font-bold">
+                <Link href="#!">Somakodi</Link>
+              </Typography>
+            </div>
 
-                {items.map(({ label, href, icon }) => (
-                  <li key={label}>
-                    <Link href={href}>
-                      <Typography
-                        as="span"
-                        className="py-1 flex items-center font-normal !text-gray-700 transition-colors hover:!text-gray-900 cursor-pointer">
-                        {icon && <span>{icon}</span>}
-                        {label}
-                      </Typography>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            ))}
+            <Typography className="text-gray-600 mb-6">
+              Empowering the next generation of tech professionals through
+              world-class online bootcamps.
+            </Typography>
+
+            <div className="flex gap-4 text-gray-700">
+              <Link href="https://www.facebook.com/Somakodischool">
+                <FaFacebook className="hover:text-blue-600 transition" />
+              </Link>
+              <Link href="https://x.com/somakodi">
+                <FaXTwitter className="hover:text-black transition" />
+              </Link>
+              <Link href="https://www.linkedin.com/company/105460723">
+                <FaLinkedin className="hover:text-blue-700 transition" />
+              </Link>
+              <Link href="https://www.instagram.com/somakodi.ke/">
+                <FaInstagram className="hover:text-pink-600 transition" />
+              </Link>
+            </div>
           </div>
 
-          {/* Subscribe Section */}
+          {/* Programs */}
           <div>
-            <Typography variant="h6" className="mb-3 text-left">
+            <Typography variant="h6" className="mb-4">
+              Popular Programs
+            </Typography>
+            <ul className="space-y-3 text-gray-600">
+              <li><Link href="/#ourcourses">Software Engineering</Link></li>
+              <li><Link href="/#ourcourses">Web Design</Link></li>
+              <li><Link href="/#ourcourses">Cybersecurity</Link></li>
+              <li><Link href="/#ourcourses">Data Science</Link></li>
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <Typography variant="h6" className="mb-4">
+              Quick Links
+            </Typography>
+            <ul className="space-y-3 text-gray-600">
+              <li><Link href="/#about-us">About Us</Link></li>
+              <li><Link href="/#ourcourses">Courses</Link></li>
+              <li><Link href="/careers">Careers</Link></li>
+              <li><Link href="/scholarships">Financial Aid</Link></li>
+            </ul>
+          </div>
+
+         {/* Subscribe Section */}
+          <div>
+            <Typography variant="h6" className="mb-4">
               Subscribe
             </Typography>
-            <Typography className="!text-gray-500 font-normal mb-4 text-base">
-              Get priority access to our exclusive Tech events and be the first to know about new courses financial Aid offers.
+            <Typography className="text-gray-600 mb-4">
+              Subscribe to our newsletter for course updates and tech insights.
             </Typography>
 
-            <div className="flex mb-3 flex-col lg:flex-row items-start gap-4">
+            <div className="flex flex-col gap-4">
               <Input
-                label="Email"
-                color="gray"
+                label="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <Button
-                color="gray"
-                className="w-full lg:w-fit"
-                size="md"
+                className="bg-gradient-to-r from-blue-600 to-indigo-600"
                 onClick={handleSubscribe}
                 disabled={loading}
               >
-                {loading ? "Sending..." : "Register"}
+                {loading ? "Subscribing..." : "Subscribe"}
               </Button>
             </div>
 
-            {success && <p className="text-green-600 mt-2">Subscribed successfully!</p>}
+            {success && (
+              <p className="text-green-600 text-sm mt-3">
+                Subscribed successfully!
+              </p>
+            )}
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <Typography
-          color="blue-gray"
-          className="md:text-center mt-16 font-normal !text-gray-700"
-        >
-          &copy; {CURRENT_YEAR} Website by <Link href="#!">Somakodi</Link>
-        </Typography>
+        {/* Divider */}
+        <div className="border-t border-gray-200 my-10" />
+
+        {/* Bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm gap-4">
+          <p>© {CURRENT_YEAR} Somakodi. All rights reserved.</p>
+          <div className="flex gap-6">
+            <p>code</p>
+            <p>create</p>
+            <p>innovate</p>
+          </div>
+        </div>
       </div>
     </footer>
   );
