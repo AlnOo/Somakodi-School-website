@@ -70,7 +70,7 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Do you provide career support after the course?",
     answer:
-      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into data roles.",
+      "Yes. We provide CV reviews, interview preparation and career guidance to help you transition your career.",
   },
   {
     question: "What if I fall behind?",
@@ -117,7 +117,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">Feb 2026</Typography>
+              <Typography className="font-semibold">MAY 2026</Typography>
             </div>
           </div>
 
@@ -189,15 +189,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Good reading comprehension (English)
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Good reading comprehension (English)</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -233,8 +227,12 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
+                <li>A computer laptop or desktop pc</li>
                 <li>Good stable internet (even part-time)</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>

@@ -117,7 +117,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">FEB 2026</Typography>
+              <Typography className="font-semibold">JUN 2026</Typography>
             </div>
           </div>
 
@@ -148,7 +148,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 10,500
+              KES 20,000
             </Typography>
           </div>
         </div>
@@ -189,15 +189,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Good reading comprehension (English)
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Good reading comprehension (English)</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -213,13 +207,13 @@ export default function SoftwareEngineeringCoursePage() {
               </div>
 
               <Typography className="text-indigo-600 text-sm mb-4">
-                Helpful (But Not Required)
+                Required
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>Prior coding experience</li>
+                <li>Prior coding experience in Html & CSS</li>
                 <li>Understanding how websites or apps work</li>
-                <li>A university degree or Diploma</li>
+                <li>A Tertiary degree or Diploma</li>
               </ul>
             </CardBody>
           </Card>
@@ -234,8 +228,12 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
+                <li>A Computer Laptop or Desktop</li>
                 <li>Good stable internet (even part-time)</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
@@ -265,9 +263,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 7,500", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 10,500", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 15,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 7,500", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 10,500", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
+              { title: "Full-Time", price: "KES 20,000", features: ["All Mentored features", "Job placement support", "Dedicated Tutor Support"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}

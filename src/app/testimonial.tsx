@@ -28,7 +28,7 @@ function TESTIMONIAL() {
 
               {/* 🔥 Fancy Discount Badge */}
               <div className="inline-block mb-4 px-4 py-2 rounded-full bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-white font-semibold text-sm shadow-lg animate-pulse">
-                Get 30% OFF Tuition Fee for Feb 26 Intake!
+                Get 50% OFF Tuition Fee for Jun 26 Intake!
                 Early enrollment
               </div>
 

@@ -7,27 +7,27 @@ import EventCard from "@/components/event-card";
 const EVENTS = [
   {
     img: "/image/blogs/divgirl.jpg",
-    title: "Future of Web Development: Trends and Innovations",
+    title: "Future of Web Development: New Trends in AI Innovations",
     desc: "Discover the latest trends, innovations and technologies shaping the future of Software Development.",
-    buttonLabel: "Mar 26",
+    buttonLabel: "Aug 26",
   },
   {
     img: "/image/blogs/blog2.svg",
-    title: "WebDev Pro Code-a-Thon: Build a Responsive Website",
+    title: "WebDev Code-a-Thon: Build a Website using AI",
     desc: "Participants will have 48 hours to create a responsive website from scratch using HTML, CSS, and JavaScript.",
     buttonLabel: "May 26",
   },
   {
     img: "/image/blogs/under.jpg",
-    title: "Ask the Experts: Frontend Web Development",
+    title: "Ask the Experts:Backend Web Development",
     desc: "Join our live Q&A session with our experienced instructors. Get answers to your queries, insights into best practices.",
-    buttonLabel: "Feb 26",
+    buttonLabel: "Jun 26",
   },
   {
     img: "/image/blogs/avatar6.jpg",
     title: "Graduation Day",
-    desc: "Join us on March 2026 as we honor the hard work, growth, and perseverance that have shaped our graduates into the next generation of tech innovators.",
-    buttonLabel: "Mar 26",
+    desc: "Join us in 2026 as we honor the hard work, growth, and perseverance that have shaped our graduates into the next generation of tech innovators.",
+    buttonLabel: "TBA",
   },
 ];
 

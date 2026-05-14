@@ -28,7 +28,7 @@ export default function SoftwareEngineeringCoursePage() {
     { id: 3, title: "Intermediate JavaScript", content: "Advanced functions, Asynchronous JavaScript, Error handling and debugging, Working with modules and bundlers, browser local storage & session storage." },
     { id: 4, title: "Advanced JavaScript & Modern Concepts", content: "OOP in JavaScript,  event loop, call stack, and concurrency, APIs and advanced asynchronous workflows, State management, Performance optimization." },
     { id: 5, title: "React Framework (Modern Front-End Development)", content: "React and component-based development, JSX, props, state, and lifecycle, Event handling, React hooks, Routing with React Router, State management using Context API or Redux, Building scalable React applications." },
-    { id: 6, title: "Databases & Data Handling", content: "databases and data modeling, JSON, structured/unstructured data, Storing and retrieving data via APIs, CRUD operations, Secure data handling and validation, React Performance Techniques" },
+    { id: 6, title: "Databases & Data Handling", content: "Databases and data modeling, JSON, structured/unstructured data, Storing and retrieving data via APIs, CRUD operations, Secure data handling and validation, React Performance Techniques" },
     { id: 7, title: "Capstone Project & Career Prep", content: "Build a full-stack application and prepare for developer roles." },
   ];
 
@@ -72,7 +72,7 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Will I get a certificate?",
     answer:
-      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Certificate of Completion that you can add to your resume and LinkedIn profile.",
+      "Yes! Upon successful completion of all modules and projects, you'll receive a Course Completion Certificate of Completion that you can add to your resume and LinkedIn profile.",
   },
   {
     question: "What if I fall behind?",
@@ -119,7 +119,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">APR 2026</Typography>
+              <Typography className="font-semibold">JUL 2026</Typography>
             </div>
           </div>
 
@@ -149,7 +149,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 50,000
+              KES 75,000
             </Typography>
           </div>
         </div>
@@ -190,15 +190,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Good reading comprehension (English)
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Good reading comprehension (English)</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -235,8 +229,12 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
+                <li>A computer laptop or desktop pc</li>
                 <li>Good stable internet (even part-time)</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
@@ -266,9 +264,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 35,000", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 50,000", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 75,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 35,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 50,000", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
+              { title: "Full-Time", price: "KES 75,000", features: ["All Mentored features", "Job placement support", "Dedicated Tutor Support"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}

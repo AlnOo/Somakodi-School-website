@@ -57,12 +57,12 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Do I need prior coding experience?",
     answer:
-      "Yes prior coding experience is required. The course is designed for individuals, with an understanding of computers and HTML & CSS.",
+      "Yes prior coding experience is required. The course is designed for individuals, with a basic understanding of Javascript, HTML & CSS.",
   },
   {
     question: "What tools and technologies will I learn?",
     answer:
-      "You will gain hands-on experience with JavaScript, React, Node.js, Git & GitHub, databases (SQLite), and modern development tools used to build react web applications.",
+      "You will gain hands-on experience with JavaScript, React, Node.js, Git & GitHub, databases, and modern development tools used to build Single Page Applications.",
   },
   {
     question: "How long is the course and what is the schedule?",
@@ -72,7 +72,7 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Will I get a certificate?",
     answer:
-      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Certificate of Completion that you can add to your resume and LinkedIn profile.",
+      "Yes! Upon successful completion of all modules and projects, you'll receive a Course Certificate that showcase your mastery of React.",
   },
   {
     question: "What if I fall behind?",
@@ -119,7 +119,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">APR 2026</Typography>
+              <Typography className="font-semibold">AUG 2026</Typography>
             </div>
           </div>
 
@@ -149,7 +149,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 25,000
+              KES 40,000
             </Typography>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function SoftwareEngineeringCoursePage() {
               </div>
 
               <Typography className="text-indigo-600 text-sm mb-4">
-                Helpful (But Not Required)
+                Required
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
@@ -234,9 +234,13 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
-                <li>Good stable internet (even part-time)</li>
+                <li>A Computer Laptop or Desktop </li>
+                <li>Good stable internet </li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
             </CardBody>
@@ -265,9 +269,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 15,000", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 25,000", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 40,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 15,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 25,000", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
+              { title: "Full-Time", price: "KES 40,000", features: ["All Mentored features", "Job placement support", "Full Time Program"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}

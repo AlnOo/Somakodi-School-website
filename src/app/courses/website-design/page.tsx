@@ -23,10 +23,10 @@ export default function SoftwareEngineeringCoursePage() {
   const [faqOpen, setFaqOpen] = useState<number | null>(null);
 
   const curriculum = [
-    { id: 1, title: "Web Design Foundations", content: "key web design principles such as layout, color theory,typography, spacing, and visual hierarchy and user-friendly design." },
+    { id: 1, title: "Web Design Foundations", content: "Key web design principles such as layout, color theory,typography, spacing, and visual hierarchy and user-friendly design." },
     { id: 2, title: "HTML & CSS and JavaScript Fundamentals", content: "Web page structure, styling, responsive design for mobile devices, modern UI patterns,  animations, dynamic forms and responsive features." },
     { id: 3, title: "Version Control with Git & GitHub", content: "Collaborate on code, track changes using Git and GitHub andd essential tools for modern web development." },
-    { id: 4, title: "Web Hosting & Deployment", content: "hosting website online, manage domains, and deploy projects using platforms like GitHub Pages, Netlify, or Firebase." },
+    { id: 4, title: "Web Hosting & Deployment", content: "Hosting website online, manage domains, and deploy projects using platforms like GitHub Pages, Netlify, or Firebase." },
     { id: 5, title: "Capstone Project & Career Prep", content: "Design and build a full responsive and prepare for web developer roles." },
   ];
 
@@ -38,7 +38,7 @@ export default function SoftwareEngineeringCoursePage() {
       image: "/image/blogs/hope.jpg",
     },
     {
-      text: "What I loved most was how hands-on the course was. We didn’t just watch tutorials—we actually built real websites. It gave me the confidence to apply what I learned immediately..",
+      text: "What I loved most was how hands-on the course was. We didn’t just watch tutorials, we actually built real websites. It gave me the confidence to apply what I learned immediately..",
       name: "Steve O.",
       role: "Freelance Designer",
       image: "/image/blogs/steve.jpg",
@@ -70,12 +70,12 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Will I get a certificate?",
     answer:
-      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Certificate of Completion that you can add to your resume and LinkedIn profile.",
+      "Yes! Upon successful completion of all modules and projects, you'll receive a Course Certificate that showcase your mastery of Website Design.",
   },
   {
     question: "Do you provide career support after the course?",
     answer:
-      "Yes. We provide CV reviews, interview preparation and career guidance to help you transition into developer roles or freelancing.",
+      "Yes. We provide CV reviews, interview preparation, Job placement support and career guidance to help you transition into website developer roles or freelancing.",
   },
   {
     question: "What if I fall behind?",
@@ -99,7 +99,8 @@ export default function SoftwareEngineeringCoursePage() {
           </Typography>
 
           <Typography className="mb-8 text-gray-600 max-w-xl">
-            Website design sits at the core of every online experience, whether it’s a business website personal portfolio, e-commerce store, or interactive platform. In a world where customers make decisions within seconds, visually appealing and user-friendly websites have become essential for every brand and organizations are rapidly shifting their presence to online. As organizations continue to digitize operations and innovate through technology master modern website design principles, architectural patterns, and best practices for building stunning web pages.
+            Website design sits at the core of every online experience, whether it’s on a company business website, a personal portfolio, an e-commerce store site or an interactive user friendly platform. In todays world customers make decisions within seconds and a visually appealing and user-friendly websites has become essential and a must have for every brand and now organizations are rapidly shifting their presence to online, driving the demand for qualified website developers.<br/>
+            As many organizations continue to digitize their operations and innovate through modern technology, you should now learn and master modern website design principles, web page architectural patterns and modern best practises for website building with this Somakodi short course on Website design.
           </Typography>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8 text-sm">
@@ -121,7 +122,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">JAN 2026</Typography>
+              <Typography className="font-semibold">JUNE 2026</Typography>
             </div>
           </div>
 
@@ -152,7 +153,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 10,500
+              KES 20,000
             </Typography>
           </div>
         </div>
@@ -193,15 +194,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Good reading comprehension (English)
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Good reading comprehension (English)</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -238,9 +233,13 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
-                <li>Good stable internet (even part-time)</li>
+                <li>A Computer Laptop or Desktop</li>
+                <li>Good stable internet</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
             </CardBody>
@@ -269,9 +268,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 7,500", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 10,500", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 15,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 7,500", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 10,500", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
+              { title: "Full-Time", price: "KES 20,000", features: ["All Mentored features", "Job placement support", "Dedicated Tutor Support"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}

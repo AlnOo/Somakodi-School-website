@@ -27,14 +27,14 @@ export default function SoftwareEngineeringCoursePage() {
     { id: 2, title: "JavaScript Foundations", content: "Variables, data types, operators, and expressions, Functions, scope, and modern ES6+ syntax, Control flow, loops, and decision-making, Arrays, objects, and essential data structures, DOM manipulation, Events and user interaction." },
     { id: 3, title: "Intermediate JavaScript", content: "Advanced functions, Asynchronous JavaScript, Error handling and debugging, Working with modules and bundlers, browser local storage & session storage." },
     { id: 4, title: "Advanced JavaScript & Modern Concepts", content: "OOP in JavaScript,  event loop, call stack, and concurrency, APIs and advanced asynchronous workflows, State management, Performance optimization." },
-    { id: 5, title: "Databases & Data Handling", content: "databases and data modeling, JSON, structured/unstructured data, Storing and retrieving data via APIs, CRUD operations, Secure data handling and validation, React Performance Techniques" },
+    { id: 5, title: "Databases & Data Handling", content: "Databases and data modeling, JSON, structured/unstructured data, Storing and retrieving data via APIs, CRUD operations, Secure data handling and validation, React Performance Techniques" },
     { id: 6, title: "Capstone Project & Career Prep", content: "Build a full-stack application and prepare for developer roles." },
   ];
 
   const testimonials = [
     {
       text: "This course made front-end development finally make sense. I went from being confused by HTML and CSS to building clean, responsive pages with confidence. The hands-on projects were exactly what I needed!",
-      name: "Phillip R.",
+      name: "Daniel R.",
       role: "Software Engineer",
       image: "/image/blogs/phillip.jpg",
     },
@@ -71,7 +71,7 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Will I get a certificate?",
     answer:
-      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Certificate of Completion that you can add to your resume and LinkedIn profile.",
+      "Yes! Upon successful completion of all modules and projects, you'll receive a Course Certificate of Completion that Showcase your Mastery of Front end Development with Javascript.",
   },
   {
     question: "What if I fall behind?",
@@ -96,8 +96,6 @@ export default function SoftwareEngineeringCoursePage() {
 
           <Typography className="mb-8 text-gray-600 max-w-xl">
             Frontend development is at the heart of every digital experience we interact with today from websites and mobile apps to dashboards, ecommerce stores, and online platforms. As businesses continue moving online, the demand for skilled frontend developers has skyrocketed. This program introduces learners to the foundations of the web and gradually builds up to advanced tools and frameworks used by professional developers. Whether you're looking to start a tech career, freelance, or enhance your digital skills, this programequips you with everything you need to thrive in the fastgrowing world of frontend software development.
-
-
           </Typography>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mb-8 text-sm">
@@ -119,7 +117,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">JAN 2026</Typography>
+              <Typography className="font-semibold">AUG 2026</Typography>
             </div>
           </div>
 
@@ -149,7 +147,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 45,000
+              KES 70,000
             </Typography>
           </div>
         </div>
@@ -190,15 +188,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Good reading comprehension (English)
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Good reading comprehension (English)</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -235,8 +227,12 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
+                <li>A Computer Laptop or Desktop</li>
                 <li>Good stable internet (even part-time)</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
@@ -266,9 +262,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 30,000", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 45,000", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 70,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 30,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 45,000", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
+              { title: "Full-Time", price: "KES 70,000", features: ["All Mentored features", "Job placement support", "Dedicated Tutor Support"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}

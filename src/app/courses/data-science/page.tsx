@@ -77,7 +77,7 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Do you provide career support after the course?",
     answer:
-      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into data roles.",
+      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into data science roles.",
   },
   {
     question: "What if I fall behind?",
@@ -155,7 +155,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 75,000
+              KES 115,000
             </Typography>
           </div>
         </div>

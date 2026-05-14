@@ -30,39 +30,31 @@ type BlogPost = {
 const BLOGS: BlogPost[] = [
   {
     id: "how-to-start-a-tech-career-kenya",
-    title: "How you can start a career in Tech  in Kenya",
+    title: "Want a career in Tech in 2026!",
     category: "Careers",
     excerpt:
-      "Breaking into tech can feel overwhelming, but it’s also one of the most powerful and life-changing journeys you can begin. With so many roles, tools, and learning paths available, it’s easy to feel stuck or unsure of where to start. Today I’ll walk you through the essential skills you need to focus on, and practical steps you can take to confidently build your future in tech no matter where you’re starting from.",
+      "Breaking into tech can feel overwhelming for a beginner, but it’s also one of the most successfull and life-changing journeys you can begin. Tech career has so many roles, tools, and learning paths available, thats it’s so easy to feel stuck or unsure of where to start. Today lets walk with you through the essential skills you need to focus on, and the practical steps you can take to confidently build your future career in tech no matter where you’re starting from.",
     image: "/image/blogs/events/blogpic1.jpg",
     content: `
 ## Introduction
-Technology has become one of the most accessible career paths in Kenya today. From Nairobi’s startup ecosystem to global remote teams, tech skills are opening doors for people from all walks of life and you don’t need to come from a computer science background to succeed. What matters most is how you approach learning and growth.
+Technology has become one of the most accessible career paths today, from Nairobi’s startup ecosystem to global remote teams, tech skills are really opening doors for people from all walks of life and you don’t need to come from a computer science background to succeed. What matters most is how you approach learning and growth.
 
-A tech career is broader than many people assume. It includes roles such as software development, quality assurance, data analysis, cybersecurity, product support, and digital design. Some roles are more technical than others and the ones I have listed are just the a small fraction of the no of available roles in tech. Many of these tech roles allow for beginners - starting from junior roles - to grow gradually and gain experertise while working. Understanding this early helps reduce the pressure of “knowing everything” before starting.
+A tech career is broad and it includes roles such as software development, quality assurance, data analysis, cybersecurity, product support, and digital design. Some roles are more technical than others and the ones I have listed are just the a small fraction of the no of available roles in tech. Many of these tech roles allow for beginners - starting from junior roles - to grow gradually and gain experertise while working, this helps reduce the pressure of “knowing everything” before starting.
+
+For most beginners looking to start a career in tech in Kenya, software and web development remain one of the most practical entry points. Learning how websites and applications work, from the user interface to the backend logic, builds transferable skills that can be used in employment, freelancing, or entrepreneurship. Other learners may find QA testing or data-related roles more aligned with their strengths, especially if they enjoy analysis or attention to detail.
 
 ![Learning tech](/image/blogs/events/blogpic1.jpg)
 
 ## Step 1: Choose Your Path
-For most beginners in Kenya, software and web development remain one of the most practical entry points. Learning how websites and applications work, from the user interface to the backend logic, builds transferable skills that can be used in employment, freelancing, or entrepreneurship. Other learners may find QA testing or data-related roles more aligned with their strengths, especially if they enjoy analysis or attention to detail.
-
 Choosing how to learn is just as important as choosing what to learn. Coding bootcamps provide structured learning, mentorship, accountability, and hands-on projects, making them ideal for career switchers and beginners who need guidance. Self-learning is also possible, especially with the abundance of free resources online, but it requires strong discipline and clear goals. Many successful learners combine both approaches to reinforce understanding.
 
 ## Step 2: Build Real Projects
-Beyond skills, mindset plays a critical role in building a tech career. Learning to code involves confusion, errors, and constant problem-solving. Feeling stuck is not a sign of failure, it is part of the process. Learners who succeed are those who stay curious, practice consistently, and learn how to break problems into smaller, manageable steps.
-
-Building projects early helps turn theory into real ability. Simple websites, small applications, and practice exercises help reinforce learning and create a portfolio that demonstrates what you can actually do. In tech hiring, proof of work often matters more than certificates alone.
-
-AI tools are now part of the modern learning experience. Used correctly, they can help explain errors, clarify concepts, and speed up experimentation. However, relying on AI without understanding leads to shallow learning. The goal is to use AI as a guide, not a replacement for thinking and problem-solving.
+Beyond skills, mindset plays a critical role in building a tech career. Learning to code involves confusion, errors, and constant problem-solving. Feeling stuck is not a sign of failure, it is part of the process. Learners who succeed are those who stay curious, practice consistently, and learn how to break problems into smaller, manageable steps. Building projects early helps turn theory into real ability. Simple websites, small applications, and practice exercises help reinforce learning and create a portfolio that demonstrates what you can actually do. In tech hiring, proof of work often matters more than certificates alone. AI tools are now part of the modern learning experience. Used correctly, they can help explain errors, clarify concepts, and speed up experimentation. However, relying on AI without understanding leads to shallow learning. The goal is to use AI as a guide, not a replacement for thinking and problem-solving.
 
 ![Project work](/image/blogs/events/blogpic2.jpg)
 
 ## Step 3: Community & Mentorship
-As you prepare for your first opportunity, remember that it may not look perfect. Many people start with internships, junior roles, freelance gigs, or volunteer projects. These early experiences build confidence, exposure, and credibility. Over time, skills compound, and better opportunities follow.
-
-Community is another powerful factor in Kenya’s tech ecosystem. Networking through meetups, online groups, LinkedIn, and peer communities helps learners stay motivated and informed. Many opportunities come through relationships and shared learning rather than job boards alone.
-
-A tech career does not end after your first role. Technology evolves constantly, and continuous learning is part of the journey. With time, experience, and focus, learners can grow into senior roles, specialize in new areas, or even build their own products and companies.
+As you prepare for your first opportunity, remember that it may not look perfect, Many start with internships, junior roles, freelance gigs or volunteer projects. These early experiences build confidence, exposure, and credibility. Over time, skills compound and better opportunities follow. Community is another powerful factor in Kenya’s tech ecosystem. Networking through meetups, online groups, LinkedIn and peer communities helps learners stay motivated and informed. Many opportunities come through relationships and shared learning rather than job boards alone. A tech career does not end after your first role. Technology evolves constantly, and continuous learning is part of the journey. With time, experience, and focus, learners can grow into senior roles, specialize in new areas, or even build their own products and companies.
 
 ![Project work](/image/blogs/events/myths.jpg)
 
@@ -88,14 +80,14 @@ Starting a tech career in Kenya is achievable for anyone willing to commit to le
 },
 {
   id: "vibe-coding-vs-learning-to-code",
-  title: "Vibe Coding vs Learning to Code: What Really Builds a Tech Career?",
+  title: "Do vibe coders still need to learn to Code?",
   category: "Careers",
   excerpt:
-    "With AI tools making it easier than ever to generate code instantly, a new trend known as 'vibe coding' has emerged. It promises fast results with minimal effort, but does it actually prepare you for a real tech career? Lets break down vibe coding versus learning to code properly, and explain which path truly sets you up for long-term success in tech.",
+    "AI tools like chatgpt, gemini, claude, ollama, copilot and others have made it easier than ever for developers to generate code instantly, a trend known as 'vibe coding' has emerged nowadays among developers. It promises fast results with minimal effort - just prompting - but does it actually prepare you for a real tech career? We can break down vibe coding versus learning to code properly, and explain which path truly sets you up for long-term success in tech.",
   image: "/image/blogs/events/vibe.jpg",
   content: `
 ## Introduction
-The way people learn tech is changing rapidly. Today, anyone can describe an idea to an AI tool and get working code in seconds. This has given rise to what many call vibe coding which is building applications by relying heavily on AI-generated code, tutorials, and copy-paste solutions, often without fully understanding how or why the code works. On the other hand, learning to code focuses on understanding fundamentals, problem-solving, and gradually building skills through practice. Both approaches exist in today’s tech landscape, but they lead to very different outcomes, especially for beginners in Kenya who are aiming for real jobs, freelancing, or long-term growth. Understanding the difference early can save you time, frustration, and false expectations.
+The way people learn to code is changing rapidly. Today, anyone can describe an idea to an AI tool and get working code in seconds. This has given rise to what many call vibe coding which is building applications by relying heavily on AI-generated code, tutorials, and copy-paste solutions, often without fully understanding how or why the code works. On the other hand, learning to code focuses on understanding fundamentals, problem-solving, and gradually building skills through practice. Both approaches exist in today’s tech landscape, but they lead to very different outcomes, especially for beginners in Kenya who are aiming for real jobs, freelancing, or long-term growth. Understanding the difference early can save you time, frustration, and false expectations.
 
 ## What Is Vibe Coding?
 Vibe coding is driven by speed and experimentation. You follow the “vibe” — asking AI tools to generate features, fixing errors by trial and error, and moving on once something works. This approach can feel exciting and empowering, especially for beginners who want to see results quickly.

@@ -190,7 +190,7 @@ export default function ScholarshipPage() {
         className="max-w-4xl mx-auto mb-16 bg-white p-8 rounded-2xl shadow-lg"
       >
         <Typography variant="h4" className="text-center mb-6 font-semibold">
-          Apply for a Scholarship
+          Apply for a Financial Aid
         </Typography>
 
         {success && (
@@ -223,7 +223,7 @@ export default function ScholarshipPage() {
               onChange={handleChange}
               className="w-full px-4 py-3 border rounded-lg"
             >
-              <option value="">Select Scholarship</option>
+              <option value="">Select Financial Aid</option>
               <option value="Financial Aid">Financial Aid</option>
               <option value="PWD Scholarship">PWD Scholarship</option>
               <option value="InnovateHer">InnovateHer</option>

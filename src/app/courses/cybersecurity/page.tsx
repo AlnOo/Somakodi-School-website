@@ -39,13 +39,13 @@ export default function SoftwareEngineeringCoursePage() {
     },
     {
       text: "What stood out for me was how practical the course was. We didn’t just learn theory, we worked with real tools like network scanners and security frameworks. The mentorship and support made learning cybersecurity feel achievable.",
-      name: "Ashley N.",
+      name: "Sidney N.",
       role: "Cybersecurity Student",
       image: "/image/blogs/ashley.jpg",
     },
     {
       text: "Before joining the Cybersecurity program, I had zero experience in tech. The hands-on labs and real-world attack simulations helped me understand how hackers think and how to stop them. I now feel confident pursuing a career in security operations",
-      name: "Aria w.",
+      name: "Miley w.",
       role: "Cybersecurity Student",
       image: "/image/blogs/aria.jpg",
     },
@@ -70,12 +70,12 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Will I get a certificate?",
     answer:
-      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Certificate of Completion that you can add to your resume and LinkedIn profile.",
+      "Yes! Upon successful completion of all modules and projects, you'll receive a Cybersecurity Certificate that Showcase your astery of securing systems.",
   },
   {
     question: "Do you provide career support after the course?",
     answer:
-      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into data roles.",
+      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into Cybersecurity roles.",
   },
   {
     question: "What if I fall behind?",
@@ -122,7 +122,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">Feb 2026</Typography>
+              <Typography className="font-semibold">AUG 2026</Typography>
             </div>
           </div>
 
@@ -153,7 +153,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 75,000
+              KES 115,000
             </Typography>
           </div>
         </div>
@@ -193,15 +193,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Understanding of Networking fundamentals
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Understanding of Networking fundamentals</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -238,8 +232,12 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
+                <li>A Computer laptop or Desktop pc</li>
                 <li>Good stable internet (even part-time)</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
@@ -269,9 +267,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 50,000", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 75,000", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 115,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 50,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 75,000", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: false },
+              { title: "Full-Time", price: "KES 115,000", features: ["All Mentored features", "Job placement support", "Dedicated Tutor Support"], popular: true },
             ].map((plan, i) => (
               <Card
                 key={i}

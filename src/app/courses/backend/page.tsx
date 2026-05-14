@@ -35,7 +35,7 @@ export default function SoftwareEngineeringCoursePage() {
 
   const testimonials = [
     {
-      text: "This course completely changed how I think about backend systems. I learned how to build scalable APIs and integrate AI models to automate real business logic. By the end of the program, I had deployed a backend service that uses AI for data-driven decisions something I never thought I could do before.",
+      text: "This course completely changed how I think about backend systems. I learned how to build scalable APIs and integrate AI models to automate real logic. By the end of the program, I had deployed a backend service that uses AI for data-driven decisions something I never thought I could do before.",
       name: "Mateo O.",
       role: "Backend Developer",
       image: "/image/blogs/mateo.jpg",
@@ -73,12 +73,12 @@ export default function SoftwareEngineeringCoursePage() {
   {
     question: "Will I get a certificate?",
     answer:
-      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Certificate of Completion that you can add to your resume and LinkedIn profile.",
+      "Yes! Upon successful completion of all modules and projects, you'll receive a Somakodi Course Certificate of Completion that Showcase your Mastery of backend web development with Python.",
   },
   {
     question: "Do you provide career support after the course?",
     answer:
-      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into data roles.",
+      "Yes. We provide CV reviews, interview preparation, career guidance and job placement support to help you transition into Software development roles or freelancing.",
   },
   {
     question: "What if I fall behind?",
@@ -126,7 +126,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">Feb 2026</Typography>
+              <Typography className="font-semibold">SEP 2026</Typography>
             </div>
           </div>
 
@@ -157,7 +157,7 @@ export default function SoftwareEngineeringCoursePage() {
           <div className="absolute bottom-6 right-6 bg-white rounded-xl shadow-lg p-5">
             <Typography className="text-sm text-gray-500">Course Price</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              KES 45,000
+              KES 75,000
             </Typography>
           </div>
         </div>
@@ -197,15 +197,9 @@ export default function SoftwareEngineeringCoursePage() {
               </Typography>
 
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>
-                  Basic Computer Skills
-                </li>
-                <li>
-                  Good reading comprehension (English)
-                </li>
-                <li>
-                  Willingness to Learn & Practice
-                </li>
+                <li>Basic Computer Skills</li>
+                <li>Good reading comprehension (English)</li>
+                <li>Willingness to Learn & Practice</li>
               </ul>
             </CardBody>
           </Card>
@@ -242,8 +236,12 @@ export default function SoftwareEngineeringCoursePage() {
                 <Typography variant="h6">Equipment</Typography>
               </div>
 
+              <Typography className="text-indigo-600 text-sm mb-4">
+                Required
+              </Typography>
+
               <ul className="space-y-3 text-sm text-gray-700 list-disc list-inside">
-                <li>A high-end laptop (a basic one works)</li>
+                <li>A Computer laptop or Desktop</li>
                 <li>Good stable internet (even part-time)</li>
                 <li>Commit a few hours daily (classes & Practice)</li>
               </ul>
@@ -273,9 +271,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 30,000", features: ["Recorded lessons", "Projects"], popular: false },
-              { title: "Mentored", price: "KES 45,000", features: ["Live sessions", "Mentorship"], popular: true },
-              { title: "Premium", price: "KES 75,000", features: ["Career coaching", "Job placement support"], popular: false },
+              { title: "Self-Paced", price: "KES 30,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
+              { title: "Mentored", price: "KES 45,000", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
+              { title: "Full-Time", price: "KES 75,000", features: ["All Mentored features", "Job placement support", "Dedicated Tutor Support"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}

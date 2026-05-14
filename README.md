@@ -1,18 +1,8 @@
-# NextJS Tailwind Course Landing Page - Free Next.js Tailwind Presentation Page
-#### Preview
-
- - [Demo](https://themewagon.github.io/NextJS-Tailwind-Course-Landing-Page/)
-
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/)
+# NextJS Tailwind project
 
 ## Getting Started
 
-1. Clone Repository
-```
-git clone https://github.com/themewagon/NextJS-Tailwind-Course-Landing-Page.git
-```
-2. Install Dependencies
+1. Install Dependencies
 ```
 npm i
 ```
@@ -30,12 +20,11 @@ bun dev
 
 ## Author 
 ```
-Design and code is completely written by Creative Tim design and development team. 
+Design completely written by Creative Tim design and development team. 
 ```
 
 ## License
 
- - Design and Code is Copyright &copy; [Creative Tim](https://www.creative-tim.com/)
  - Licensed cover under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
+
 
