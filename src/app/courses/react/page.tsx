@@ -269,9 +269,9 @@ export default function SoftwareEngineeringCoursePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Self-Paced", price: "KES 15,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Mentorship"], popular: false },
-              { title: "Mentored", price: "KES 25,000", features: ["All self-paced features", "Daily Tutor led sessions", "Job placement support"], popular: true },
-              { title: "Full-Time", price: "KES 40,000", features: ["All Mentored features", "Job placement support", "Full Time Program"], popular: false },
+              { title: "Self-Paced", price: "KES 50,000", features: ["Recorded class lessons", "Online Tutor Support", "Career Resources", "Flexible Schedule"], popular: false },
+              { title: "Mentored", price: "KES 45,000", features: ["Live tutor-led classes", "Dedicated tutor + feedback", "Career mentorship", "Part-time / scheduled"], popular: true },
+              { title: "Full-Time", price: "KES 115,000", features: ["Intensive daily classes", "Dedicated instructor + close supervision", "Job placement + interview prep", "Full-time"], popular: false },
             ].map((plan, i) => (
               <Card
                 key={i}
