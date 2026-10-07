@@ -157,9 +157,8 @@ export default function SoftwareEngineeringCoursePage() {
             </Typography>
           </div>
           <div className="absolute top-6 left-6 bg-white rounded-xl shadow-lg p-5">
-            <Typography className="text-sm text-gray-500">June class offer</Typography>
+            <Typography className="text-sm text-gray-500">Nov class offer</Typography>
             <Typography variant="h4" className="text-indigo-600">
-              40% off
             </Typography>
              <Typography variant="h3" className="text-indigo-600">
              Kes. 45,000
