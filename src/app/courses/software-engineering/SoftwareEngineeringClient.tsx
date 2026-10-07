@@ -160,7 +160,7 @@ export default function SoftwareEngineeringCoursePage() {
             <Typography className="text-sm text-gray-500">Nov class offer</Typography>
             <Typography variant="h4" className="text-indigo-600">
             </Typography>
-             <Typography variant="h3" className="text-indigo-600">
+             <Typography variant="h3" className="text-orange-600">
              Kes. 45,000
             </Typography>
           </div>
