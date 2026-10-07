@@ -119,7 +119,7 @@ export default function SoftwareEngineeringCoursePage() {
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">JUL 2026</Typography>
+              <Typography className="font-semibold">JAN 2027</Typography>
             </div>
           </div>
 

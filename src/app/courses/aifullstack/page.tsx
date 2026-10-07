@@ -126,7 +126,7 @@ import Footer from "@/components/Footer";
             </div>
             <div>
               <Typography className="text-gray-500">Start Date</Typography>
-              <Typography className="font-semibold">JUN 2026</Typography>
+              <Typography className="font-semibold">FEB 2027</Typography>
             </div>
           </div>
 
